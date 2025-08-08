@@ -67,16 +67,7 @@ app.get('/auth/callback', async (req, res) => {
         // *******************************************************************
 
         // Por ahora, solo mostraremos un mensaje de éxito en la página.
-        res.send(`
-            <h1>¡Verificación Exitosa!</h1>
-            <p>Hemos confirmado tu identidad de Discord de forma segura.</p>
-            <ul>
-                <li><strong>ID de Discord:</strong> ${discordId}</li>
-                <li><strong>Usuario:</strong> ${discordUsername}</li>
-            </ul>
-            <p>¡Ya puedes cerrar esta ventana y entrar a nuestro servidor de FiveM!</p>
-            <p><strong>Siguiente paso:</strong> Conectar esto a la página web en Netlify.</p>
-        `);
+        res.redirect('https://discord.gg/xUvbwzxb');
 
     } catch (error) {
         // Si algo falla en el proceso, mostramos un error.
@@ -90,3 +81,4 @@ app.listen(port, () => {
     console.log(`Servidor de backend escuchando en http://localhost:${port}`);
     console.log('Para iniciar la prueba, visita en tu navegador: http://localhost:3000/auth/discord');
 });
+
