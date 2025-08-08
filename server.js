@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 // 3. Extraer nuestras credenciales seguras del archivo .env
 const discordClientId = process.env.DISCORD_CLIENT_ID;
 const discordClientSecret = process.env.DISCORD_CLIENT_SECRET;
-const redirectUri = 'http://localhost:3000/auth/callback';
+const redirectUri = 'https://backend-verificacion-fivem.onrender.com/auth/callback';
 
 // 4. Ruta que inicia la verificación (la que ya probaste)
 app.get('/auth/discord', (req, res) => {
