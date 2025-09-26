@@ -81,7 +81,7 @@ app.get('/auth/callback', async (req, res) => {
 
         // Finalmente, redirigimos al usuario a nuestro servidor de Discord.
         // ¡RECUERDA CAMBIAR ESTE ENLACE POR EL DE TU SERVIDOR!
-        res.redirect('https://discord.gg/wF2zSb6ceb');
+        res.redirect('https://discord.gg/APOSTOL');
 
     } catch (error) {
         console.error('Error en el proceso de autenticación:', error);
@@ -92,6 +92,7 @@ app.get('/auth/callback', async (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor de backend escuchando en http://localhost:${port}`);
 });
+
 
 
 
